@@ -13,7 +13,9 @@ struct ContentView: View {
     
     enum Tab {
         case home
-        case generation
+        case search
+        case calendar
+        case pantry
     }
     var body: some View {
         TabView(selection: $selection) {
@@ -23,11 +25,21 @@ struct ContentView: View {
                 }
                 .tag(Tab.home)
             
-            GenerationView()
+            SearchView()
                 .tabItem {
-                    Label("Generation", systemImage: "cpu")
+                    Label("Generation", systemImage: "magnifyingglass")
                 }
-                    .tag(Tab.generation)
+                .tag(Tab.search)
+            CalendarView()
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
+                .tag(Tab.calendar)
+            PantryView()
+                .tabItem{
+                    Label("Pantry", systemImage: "carrot")
+                }
+                .tag(Tab.pantry)
         }
     }
 }

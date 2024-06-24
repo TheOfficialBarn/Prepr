@@ -4,11 +4,10 @@
 //
 //  Created by Aiden Barnard on 6/22/24.
 //
+//This is each individual tile
 
 import SwiftUI
 
-
-//This is each individual tile
 struct CategoryItem: View {
     
     var item: Item
@@ -19,15 +18,15 @@ struct CategoryItem: View {
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155)
-                .cornerRadius(8)
+                .cornerRadius(10)
             Text(item.name)
-                .foregroundStyle(.primary)
-                .font(.caption)
+                //.foregroundStyle(.primary)
+                .font(.headline)
+                
         }
-        .padding(.leading, 15) //To give room inbetween horizontal scroll between other foods
     }
 }
 
 #Preview {
-    CategoryItem(item: food[0])
+    CategoryItem(item: foods[0])
 }

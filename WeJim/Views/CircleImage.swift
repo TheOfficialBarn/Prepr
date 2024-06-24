@@ -7,12 +7,25 @@
 
 import SwiftUI
 
+
 struct CircleImage: View {
+    
+    var item: Item
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        item.image
+            .resizable()
+            .scaledToFit()
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4)
+            }
+            .shadow(radius: 7)
+            .padding(.horizontal, 80)
     }
 }
 
+
 #Preview {
-    CircleImage()
+    CircleImage(item: foods[0])
 }

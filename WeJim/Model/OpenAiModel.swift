@@ -17,7 +17,7 @@ func fetchOpenAICompletion() async throws -> CompletionsResult {
     
     let query = CompletionsQuery(
         model: "gpt-3.5-turbo-instruct",
-        prompt: "Taco recipe",
+        prompt: "Send a hello to discord people.",
         temperature: 0.4,
         maxTokens: 100,
         topP: 1,
