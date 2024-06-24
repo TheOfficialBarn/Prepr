@@ -1,5 +1,5 @@
 //
-//  ApiManager.swift
+//  OpenAiModel.swift
 //  WeJim
 //
 //  Created by Aiden Barnard on 6/20/24.
@@ -17,7 +17,7 @@ func fetchOpenAICompletion() async throws -> CompletionsResult {
     
     let query = CompletionsQuery(
         model: "gpt-3.5-turbo-instruct",
-        prompt: "Do I have to gym? Say yes go to gym.?",
+        prompt: "Taco recipe",
         temperature: 0.4,
         maxTokens: 100,
         topP: 1,

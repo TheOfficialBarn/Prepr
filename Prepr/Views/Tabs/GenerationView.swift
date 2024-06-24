@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct GenerationView: View {
     
     
     @State private var completionResult: String = "" //This is where the results appear. This variable will update with button
@@ -38,7 +38,7 @@ struct ContentView: View {
             
             Text("JimQuery:").font(.system(size: 30))
             
-            
+            CategoryRow()
             
             RoundedRectangle(cornerRadius: CGFloat(20))
                 .fill(Color.accentColor)
@@ -80,5 +80,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GenerationView()
 }
