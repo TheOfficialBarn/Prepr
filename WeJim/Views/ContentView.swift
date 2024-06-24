@@ -27,7 +27,7 @@ struct ContentView: View {
             
             SearchView()
                 .tabItem {
-                    Label("Generation", systemImage: "magnifyingglass")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
                 .tag(Tab.search)
             CalendarView()

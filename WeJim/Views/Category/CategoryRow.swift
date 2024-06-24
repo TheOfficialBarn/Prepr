@@ -16,8 +16,7 @@ struct CategoryRow: View {
     var body: some View {
         HStack {
             Text(items[0].category)
-                .font(.title2)
-                .foregroundStyle(.primary)
+                .font(.headline)
             Spacer()
         }
         .padding(.horizontal, 15)
@@ -29,13 +28,16 @@ struct CategoryRow: View {
                     } label: {
                         CategoryItem(item: item)
                     }
+                    .buttonStyle(PlainButtonStyle()) //Removes blue text from links.
                 }
             }
             .padding(.horizontal, 15)
         }
+        .padding(.bottom, 5)
     }
 }
 
 #Preview {
     CategoryRow(items: foods)
+    //In this preview everything is gray due to .buttonStyle(...) but it won't be like this in the SearchView
 }

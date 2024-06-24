@@ -21,7 +21,8 @@ struct CategoryItem: View {
                 .cornerRadius(10)
             Text(item.name)
                 //.foregroundStyle(.primary)
-                .font(.headline)
+                .font(.caption)
+                .padding(.leading, 5)
                 
         }
     }

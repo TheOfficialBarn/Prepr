@@ -12,12 +12,12 @@ import OpenAI
 let openAI = OpenAI(apiToken: "sk-proj-P4YaBSXuPHc164gkVRAFT3BlbkFJHHAd8a7sp5hngWLbFWwe")
 
 
-func fetchOpenAICompletion() async throws -> CompletionsResult {
+func fetchOpenAICompletion(item: Item) async throws -> CompletionsResult {
     print("We got here")
     
     let query = CompletionsQuery(
         model: "gpt-3.5-turbo-instruct",
-        prompt: "Send a hello to discord people.",
+        prompt: "Generate me a recipe of \(item). Include bulleted macro nutrients: calories, fat, protein, carbohydrates, and sodium.",
         temperature: 0.4,
         maxTokens: 100,
         topP: 1,

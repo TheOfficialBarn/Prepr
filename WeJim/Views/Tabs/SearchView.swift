@@ -13,35 +13,20 @@ struct SearchView: View {
     @State private var searchText: String = ""
     
     var body: some View {
-        
-        VStack{
-            Text("Recipe Finder").font(.title.bold()) //Font weight is a method on top of font size
-            Text("With OpenAI Integration").font(.title2)
-            
-            Spacer()
-            
-            HStack { //Horizontal stack for search bar and search button
-                TextField("What's your craving...", text: $searchText)
-                    .background(Color.white)
-                    .cornerRadius(6) //This will be deprocated soon
-                    .shadow(radius: 0.5)
-                Button("Search") {
-                    //Perform action here
-                }
-                .buttonStyle(.borderedProminent)//Gray with blue
+        NavigationSplitView {
+            List {
+                CategoryRow(items: foods)
+                    .listRowInsets(EdgeInsets()) //These expand the tiles to take up the entire list view
+                CategoryRow(items: bevs)
+                    .listRowInsets(EdgeInsets())
+                CategoryRow(items: alcBevs)
+                    .listRowInsets(EdgeInsets())
             }
-            .padding(15)
-            .shadow(radius: 20, y: 10)
+            .navigationTitle("Recipe Finder")
+            .searchable(text: $searchText, prompt: "Search")
             
-            NavigationSplitView {
-                ScrollView {
-                    CategoryRow(items: foods)
-                    CategoryRow(items: bevs)
-                    CategoryRow(items: alcBevs)
-                }
-            } detail: {
-                Text("Select a recipe")
-            }
+        } detail: {
+            Text("Select a recipe")
         }
     }
 }

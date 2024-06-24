@@ -25,7 +25,6 @@
 		9DC83E592C27CDB1003C403A /* PantryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E582C27CDB1003C403A /* PantryView.swift */; };
 		9DC83E5F2C28E20B003C403A /* ChosenItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */; };
 		9DC83E612C28E64C003C403A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E602C28E64C003C403A /* CircleImage.swift */; };
-		9DC83E632C28F1A3003C403A /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E622C28F1A3003C403A /* Rectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		9DC83E582C27CDB1003C403A /* PantryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryView.swift; sourceTree = "<group>"; };
 		9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenItemView.swift; sourceTree = "<group>"; };
 		9DC83E602C28E64C003C403A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		9DC83E622C28F1A3003C403A /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,6 @@
 		9D8E364B2C27696900FCED4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9DC83E622C28F1A3003C403A /* Rectangle.swift */,
 				9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */,
 				9DC83E532C27AC75003C403A /* Item.swift */,
 			);
@@ -333,7 +330,6 @@
 				9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */,
 				9DBACE102C24C05000B5CEE6 /* OpenAiModel.swift in Sources */,
 				9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */,
-				9DC83E632C28F1A3003C403A /* Rectangle.swift in Sources */,
 				9DC83E612C28E64C003C403A /* CircleImage.swift in Sources */,
 				9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */,
 				9DC83E592C27CDB1003C403A /* PantryView.swift in Sources */,

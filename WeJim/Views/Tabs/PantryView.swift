@@ -11,45 +11,13 @@ import SwiftUI
 struct PantryView: View {
     var body: some View {
         
-        NavigationStack {
-            NavigationLink {
-                ChosenItemView(item: foods[0])
-            } label: {
-                CategoryItem(item: foods[0])
-            }
-        }
+        Text("Hello World!")
     }
 }
 
 
 
-/*
- import SwiftUI
 
- struct CategoryItem: View {
-     
-     var item: Item
-     
-     var body: some View {
-         VStack(alignment: .leading) {
-             item.image
-                 .renderingMode(.original)
-                 .resizable()
-                 .frame(width: 155, height: 155)
-                 .cornerRadius(10)
-             Text(item.name)
-                 .fontWeight(.bold)
-                 .foregroundStyle(.primary)
-                 .font(.caption)
-                 
-         }
-     }
- }
-
- #Preview {
-     CategoryItem(item: foods[0])
- }
- */
 
 
 #Preview {
