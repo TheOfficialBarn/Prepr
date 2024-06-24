@@ -31,8 +31,8 @@ struct CategoryRow: View {
                     }
                 }
             }
+            .padding(.horizontal, 15)
         }
-        .padding(.horizontal, 15)
     }
 }
 
