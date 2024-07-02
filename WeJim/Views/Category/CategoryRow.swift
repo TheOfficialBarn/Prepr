@@ -14,26 +14,28 @@ struct CategoryRow: View {
     var items: [Item]
     
     var body: some View {
-        HStack {
-            Text(items[0].category)
-                .font(.headline)
-            Spacer()
-        }
-        .padding(.horizontal, 15)
-        ScrollView(.horizontal, showsIndicators: false) { //showsIndicators is that lil gray scrollbar
-            HStack(alignment: .top, spacing: 15) {
-                ForEach(items, id: \.name) { item in
-                    NavigationLink{
-                        ChosenItemView(item: item)
-                    } label: {
-                        CategoryItem(item: item)
-                    }
-                    .buttonStyle(PlainButtonStyle()) //Removes blue text from links.
-                }
+        VStack {
+            HStack {
+                Text(items[0].category)
+                    .font(.headline)
+                Spacer()
             }
             .padding(.horizontal, 15)
+            ScrollView(.horizontal, showsIndicators: false) { //showsIndicators is that lil gray scrollbar
+                HStack(alignment: .top, spacing: 15) {
+                    ForEach(items, id: \.name) { item in
+                        NavigationLink{
+                            ChosenItemView(item: item)
+                        } label: {
+                            CategoryItem(item: item)
+                        }
+                        .buttonStyle(PlainButtonStyle()) //Removes blue text from links.
+                    }
+                }
+                .padding(.horizontal, 15)
+            }
         }
-        .padding(.bottom, 5)
+        .padding(.vertical, 10)
     }
 }
 

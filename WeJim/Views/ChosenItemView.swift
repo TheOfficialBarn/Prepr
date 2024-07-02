@@ -11,6 +11,8 @@ struct ChosenItemView: View {
     
     var item: Item
     
+    @State private var ingredients = []
+    
     @State private var completionResult: String = "" //This is where the results appear. This variable will update with button
     @State private var isLoading: Bool = false //Is your query being processed currently. Will update with button
     //@State signals that this variable is subject to change. It is a property wrapper.

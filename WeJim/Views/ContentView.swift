@@ -15,7 +15,7 @@ struct ContentView: View {
         case home
         case search
         case calendar
-        case pantry
+        case grocerylist
     }
     var body: some View {
         TabView(selection: $selection) {
@@ -35,11 +35,11 @@ struct ContentView: View {
                     Label("Calendar", systemImage: "calendar")
                 }
                 .tag(Tab.calendar)
-            PantryView()
+            GroceryListView()
                 .tabItem{
-                    Label("Pantry", systemImage: "carrot")
+                    Label("Groceries", systemImage: "carrot")
                 }
-                .tag(Tab.pantry)
+                .tag(Tab.grocerylist)
         }
     }
 }

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct CalendarView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Calendar 🗓️")
+                .font(.title2)
+            Spacer()
+            Text("Here, I would like to add a feature that allows you to schedule meals to be prepped from the home view.")
+                .padding()
+        }
     }
 }
 

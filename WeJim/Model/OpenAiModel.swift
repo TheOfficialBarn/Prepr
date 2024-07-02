@@ -13,11 +13,9 @@ let openAI = OpenAI(apiToken: "sk-proj-P4YaBSXuPHc164gkVRAFT3BlbkFJHHAd8a7sp5hng
 
 
 func fetchOpenAICompletion(item: Item) async throws -> CompletionsResult {
-    print("We got here")
-    
     let query = CompletionsQuery(
         model: "gpt-3.5-turbo-instruct",
-        prompt: "Generate me a recipe of \(item). Include bulleted macro nutrients: calories, fat, protein, carbohydrates, and sodium.",
+        prompt: "Generate me a recipe of \(item). Follow this exactly with no extra words. Type in ingredients seperated by commas and then end it with a period. Then type in their respective quantities for one serving, again seperated by commas.",
         temperature: 0.4,
         maxTokens: 100,
         topP: 1,
@@ -25,11 +23,9 @@ func fetchOpenAICompletion(item: Item) async throws -> CompletionsResult {
         presencePenalty: 0,
         stop: ["\\n"]
     )
-    
-    print("Now we here")
+
     //Call the API and handle the result
     let result = try await openAI.completions(query: query)
-    print("helloooooo")
     
     //Returned to be processed later
     return result
