@@ -8,10 +8,18 @@
 
 import SwiftUI
 
-struct PantryView: View {
+struct GroceryListView: View {
     var body: some View {
-        
-        Text("Hello World!")
+        VStack {
+            Text("Shopping List 🛒")
+                .font(.title2)
+            List {
+                Text("Beef")
+                Text("Rice")
+                Text("Cheese")
+                Text("Oreos")
+            }
+        }
     }
 }
 
@@ -21,5 +29,5 @@ struct PantryView: View {
 
 
 #Preview {
-    PantryView()
+    GroceryListView()
 }
