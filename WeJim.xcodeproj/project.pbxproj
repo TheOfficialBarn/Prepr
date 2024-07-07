@@ -10,6 +10,9 @@
 		9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364C2C276A5D00FCED4A /* SearchView.swift */; };
 		9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364E2C276B8C00FCED4A /* HomeView.swift */; };
 		9D8E36522C276ECD00FCED4A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E36512C276ECD00FCED4A /* CategoryRow.swift */; };
+		9D9B69342C3A504300162AFD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69332C3A503B00162AFD /* Profile.swift */; };
+		9D9B69362C3A52C100162AFD /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69352C3A52C100162AFD /* ProfileHost.swift */; };
+		9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69372C3A535F00162AFD /* ProfileSummary.swift */; };
 		9DBACDE62C24BFF800B5CEE6 /* WeJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */; };
 		9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */; };
 		9DBACDEA2C24BFF900B5CEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		9D8E364C2C276A5D00FCED4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9D8E364E2C276B8C00FCED4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9D8E36512C276ECD00FCED4A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		9D9B69332C3A503B00162AFD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9D9B69352C3A52C100162AFD /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		9D9B69372C3A535F00162AFD /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		9DBACDE22C24BFF800B5CEE6 /* WeJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimApp.swift; sourceTree = "<group>"; };
 		9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 				9DC83E552C27B82F003C403A /* Category */,
 				9DC83E602C28E64C003C403A /* CircleImage.swift */,
 				9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */,
+				9D9B69352C3A52C100162AFD /* ProfileHost.swift */,
+				9D9B69372C3A535F00162AFD /* ProfileSummary.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 		9D8E364B2C27696900FCED4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D9B69332C3A503B00162AFD /* Profile.swift */,
 				9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */,
 				9DC83E532C27AC75003C403A /* Item.swift */,
 			);
@@ -329,12 +338,15 @@
 			files = (
 				9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */,
 				9DBACE102C24C05000B5CEE6 /* OpenAiModel.swift in Sources */,
+				9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */,
 				9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */,
+				9D9B69342C3A504300162AFD /* Profile.swift in Sources */,
 				9DC83E612C28E64C003C403A /* CircleImage.swift in Sources */,
 				9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */,
 				9DC83E592C27CDB1003C403A /* GroceryListView.swift in Sources */,
 				9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */,
 				9DC83E5F2C28E20B003C403A /* ChosenItemView.swift in Sources */,
+				9D9B69362C3A52C100162AFD /* ProfileHost.swift in Sources */,
 				9DC83E572C27CD9C003C403A /* CalendarView.swift in Sources */,
 				9DC83E542C27AC75003C403A /* Item.swift in Sources */,
 				9DBACDE62C24BFF800B5CEE6 /* WeJimApp.swift in Sources */,
