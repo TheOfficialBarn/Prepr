@@ -7,18 +7,9 @@
 
 import SwiftUI
 
-
 struct Settings: View {
     var body: some View {
-        NavigationStack {
-            Form {
-                Text("Hello")
-                Text("These are your settings")
-                Text("To be implemented later on")
-            }
-            .navigationTitle("Settings")
-        }
-        .preferredColorScheme(.dark)
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
