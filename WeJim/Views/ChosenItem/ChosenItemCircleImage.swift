@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CircleImage: View {
+struct ChosenItemCircleImage: View {
     
     var item: Item
     
@@ -27,5 +27,5 @@ struct CircleImage: View {
 
 
 #Preview {
-    CircleImage(item: foods[0])
+    ChosenItemCircleImage(item: foods[0])
 }

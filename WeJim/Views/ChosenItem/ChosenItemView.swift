@@ -26,7 +26,7 @@ struct ChosenItemView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFit()
-            CircleImage(item: item)
+            ChosenItemCircleImage(item: item)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
