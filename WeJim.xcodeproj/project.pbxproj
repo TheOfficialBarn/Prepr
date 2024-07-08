@@ -14,6 +14,7 @@
 		9D9B69362C3A52C100162AFD /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69352C3A52C100162AFD /* ProfileHost.swift */; };
 		9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69372C3A535F00162AFD /* ProfileSummary.swift */; };
 		9D9B693A2C3B4EFF00162AFD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69392C3B4EFF00162AFD /* Settings.swift */; };
+		9D9B693E2C3B85B300162AFD /* ProfileSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B693D2C3B85B300162AFD /* ProfileSignIn.swift */; };
 		9DBACDE62C24BFF800B5CEE6 /* WeJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */; };
 		9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */; };
 		9DBACDEA2C24BFF900B5CEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		9D9B69352C3A52C100162AFD /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		9D9B69372C3A535F00162AFD /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		9D9B69392C3B4EFF00162AFD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9D9B693D2C3B85B300162AFD /* ProfileSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSignIn.swift; sourceTree = "<group>"; };
 		9DBACDE22C24BFF800B5CEE6 /* WeJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimApp.swift; sourceTree = "<group>"; };
 		9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				9D9B69352C3A52C100162AFD /* ProfileHost.swift */,
 				9D9B69372C3A535F00162AFD /* ProfileSummary.swift */,
+				9D9B693D2C3B85B300162AFD /* ProfileSignIn.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				9DC83E612C28E64C003C403A /* ChosenItemCircleImage.swift in Sources */,
 				9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */,
 				9DC83E592C27CDB1003C403A /* GroceryListView.swift in Sources */,
+				9D9B693E2C3B85B300162AFD /* ProfileSignIn.swift in Sources */,
 				9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */,
 				9DC83E5F2C28E20B003C403A /* ChosenItemView.swift in Sources */,
 				9D9B693A2C3B4EFF00162AFD /* Settings.swift in Sources */,

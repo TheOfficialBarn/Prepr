@@ -12,13 +12,14 @@ struct ProfileSummary: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(spacing: 10) {
+                Text(profile.profileEmoji)
+                    .font(.system(size: 100))
+                    .shadow(color: .black, radius: 20)
                 Text(profile.username)
                     .bold()
                     .font(.title)
-                Text("Profile Emoji: \(profile.profileEmoji)")
-                    
-
+                Text(profile.name)
             }
         }
     }
