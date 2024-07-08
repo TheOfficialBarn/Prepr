@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showingProfile = false
+    @State private var showingSettings = false
     
     var body: some View {
         NavigationSplitView {
@@ -17,15 +18,31 @@ struct HomeView: View {
             }
             .navigationTitle("Home 🏠")
             .toolbar {
-                Button {
-                    showingProfile.toggle()
-                } label: {
-                    Label("User Profile", systemImage: "person.crop.circle")
+                //The profile Toolbar button
+                ToolbarItem {
+                    Button {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("User Profile", systemImage: "person.crop.circle")
+                    }
+                    .sheet(isPresented: $showingProfile) {
+                        ProfileHost()
+                    }
+                }
+                
+                //The settings Toolbar button
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        showingSettings.toggle()
+                    } label: {
+                        Label("Settings", systemImage: "gear")
+                    }
+                    .sheet(isPresented: $showingSettings) {
+                        Settings()
+                    }
                 }
             }
-            .sheet(isPresented: $showingProfile) {
-                ProfileHost()
-            }
+
         } detail: {
             Text("Hello!")
         }
