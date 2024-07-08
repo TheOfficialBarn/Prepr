@@ -15,6 +15,8 @@
 		9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69372C3A535F00162AFD /* ProfileSummary.swift */; };
 		9D9B693A2C3B4EFF00162AFD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69392C3B4EFF00162AFD /* Settings.swift */; };
 		9D9B693E2C3B85B300162AFD /* ProfileSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B693D2C3B85B300162AFD /* ProfileSignIn.swift */; };
+		9D9B69412C3B8EF600162AFD /* RecipeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69402C3B8EF600162AFD /* RecipeTile.swift */; };
+		9D9B69442C3B9CB200162AFD /* RecipeTileColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B69432C3B9CB200162AFD /* RecipeTileColumn.swift */; };
 		9DBACDE62C24BFF800B5CEE6 /* WeJimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */; };
 		9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */; };
 		9DBACDEA2C24BFF900B5CEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		9D9B69372C3A535F00162AFD /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		9D9B69392C3B4EFF00162AFD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9D9B693D2C3B85B300162AFD /* ProfileSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSignIn.swift; sourceTree = "<group>"; };
+		9D9B69402C3B8EF600162AFD /* RecipeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTile.swift; sourceTree = "<group>"; };
+		9D9B69432C3B9CB200162AFD /* RecipeTileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileColumn.swift; sourceTree = "<group>"; };
 		9DBACDE22C24BFF800B5CEE6 /* WeJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimApp.swift; sourceTree = "<group>"; };
 		9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		9D8E364A2C27694400FCED4A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D9B693F2C3B8ECC00162AFD /* Recipes */,
 				9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */,
 				9D8E36502C276E8200FCED4A /* Tabs */,
 				9DC83E552C27B82F003C403A /* Category */,
@@ -154,6 +159,15 @@
 				9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */,
 			);
 			path = ChosenItem;
+			sourceTree = "<group>";
+		};
+		9D9B693F2C3B8ECC00162AFD /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B69402C3B8EF600162AFD /* RecipeTile.swift */,
+				9D9B69432C3B9CB200162AFD /* RecipeTileColumn.swift */,
+			);
+			path = Recipes;
 			sourceTree = "<group>";
 		};
 		9DBACDD92C24BFF800B5CEE6 = {
@@ -358,7 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9B69442C3B9CB200162AFD /* RecipeTileColumn.swift in Sources */,
 				9DBACDE82C24BFF800B5CEE6 /* ContentView.swift in Sources */,
+				9D9B69412C3B8EF600162AFD /* RecipeTile.swift in Sources */,
 				9DBACE102C24C05000B5CEE6 /* OpenAiModel.swift in Sources */,
 				9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */,
 				9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */,
