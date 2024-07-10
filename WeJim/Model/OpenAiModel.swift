@@ -15,7 +15,7 @@ let openAI = OpenAI(apiToken: "sk-proj-P4YaBSXuPHc164gkVRAFT3BlbkFJHHAd8a7sp5hng
 func fetchOpenAICompletion(item: Item) async throws -> CompletionsResult {
     let query = CompletionsQuery(
         model: "gpt-3.5-turbo-instruct",
-        prompt: "Generate me a recipe of \(item). Follow this exactly with no extra words. Type in ingredients seperated by commas and then end it with a period. Then type in their respective quantities for one serving, again seperated by commas.",
+        prompt: "Generate me a recipe of \(item). Follow this exactly with no extra words: Send ingredients seperated by commas with quantity in parenthesis and then end recipe with a period. I want one serving recipe.",
         temperature: 0.4,
         maxTokens: 100,
         topP: 1,
