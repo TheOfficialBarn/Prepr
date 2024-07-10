@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct RecipeTileColumn: View {
+    var queuedRecipes: [String] = [] //Need to make Recipe structuretype
     var body: some View {
         ScrollView(showsIndicators: false) {
-            RecipeTile(recipe: "Meal 1")
-            RecipeTile(recipe: "Meal 2")
-            RecipeTile(recipe: "Meal 3")
-            RecipeTile(recipe: "Meal 4")
-            RecipeTile(recipe: "Meal 5")
+            RecipeTile(recipe: savedRecipes[0])
+            RecipeTile(recipe: savedRecipes[1])
+            RecipeTile(recipe: savedRecipes[2])
+            RecipeTile(recipe: savedRecipes[3])
+            RecipeTile(recipe: savedRecipes[4])
+            RecipeTile(recipe: savedRecipes[5])
+            RecipeTile(recipe: savedRecipes[6])
 
 
 
@@ -25,4 +28,7 @@ struct RecipeTileColumn: View {
 
 #Preview {
     RecipeTileColumn()
+        .ignoresSafeArea() //Doesn't impact actual code
 }
+
+//Edit this comment to change the colors

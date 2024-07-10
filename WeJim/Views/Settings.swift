@@ -17,8 +17,9 @@ struct Settings: View {
                 Text("To be implemented later on")
             }
             .navigationTitle("Settings")
+            .preferredColorScheme(.dark)
         }
-        .preferredColorScheme(.dark)
+        
     }
 }
 

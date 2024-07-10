@@ -26,6 +26,8 @@
 		9DBACE032C24BFF900B5CEE6 /* WeJimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACE022C24BFF900B5CEE6 /* WeJimUITestsLaunchTests.swift */; };
 		9DBACE102C24C05000B5CEE6 /* OpenAiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */; };
 		9DBACE132C24C08100B5CEE6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBACE122C24C08100B5CEE6 /* OpenAI */; };
+		9DC18C9A2C3E54CE00990132 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC18C992C3E54CE00990132 /* Recipe.swift */; };
+		9DC18C9F2C3E6D3B00990132 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC18C9E2C3E6D3B00990132 /* GoogleSignInSwift */; };
 		9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E512C27AB11003C403A /* CategoryItem.swift */; };
 		9DC83E542C27AC75003C403A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E532C27AC75003C403A /* Item.swift */; };
 		9DC83E572C27CD9C003C403A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E562C27CD9C003C403A /* CalendarView.swift */; };
@@ -73,6 +75,7 @@
 		9DBACE002C24BFF900B5CEE6 /* WeJimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimUITests.swift; sourceTree = "<group>"; };
 		9DBACE022C24BFF900B5CEE6 /* WeJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiModel.swift; sourceTree = "<group>"; };
+		9DC18C992C3E54CE00990132 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		9DC83E512C27AB11003C403A /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		9DC83E532C27AC75003C403A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9DC83E562C27CD9C003C403A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBACE132C24C08100B5CEE6 /* OpenAI in Frameworks */,
+				9DC18C9F2C3E6D3B00990132 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +114,8 @@
 		9D8E364A2C27694400FCED4A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9D9B693F2C3B8ECC00162AFD /* Recipes */,
 				9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */,
+				9D9B693F2C3B8ECC00162AFD /* Recipes */,
 				9D8E36502C276E8200FCED4A /* Tabs */,
 				9DC83E552C27B82F003C403A /* Category */,
 				9D9B693C2C3B6E1F00162AFD /* ChosenItem */,
@@ -127,6 +131,7 @@
 				9D9B69332C3A503B00162AFD /* Profile.swift */,
 				9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */,
 				9DC83E532C27AC75003C403A /* Item.swift */,
+				9DC18C992C3E54CE00990132 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			name = WeJim;
 			packageProductDependencies = (
 				9DBACE122C24C08100B5CEE6 /* OpenAI */,
+				9DC18C9E2C3E6D3B00990132 /* GoogleSignInSwift */,
 			);
 			productName = WeJim;
 			productReference = 9DBACDE22C24BFF800B5CEE6 /* WeJim.app */;
@@ -329,6 +335,7 @@
 			mainGroup = 9DBACDD92C24BFF800B5CEE6;
 			packageReferences = (
 				9DBACE112C24C08100B5CEE6 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				9DC18C9D2C3E6D3B00990132 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 9DBACDE32C24BFF800B5CEE6 /* Products */;
 			projectDirPath = "";
@@ -391,6 +398,7 @@
 				9DC83E542C27AC75003C403A /* Item.swift in Sources */,
 				9DBACDE62C24BFF800B5CEE6 /* WeJimApp.swift in Sources */,
 				9D8E36522C276ECD00FCED4A /* CategoryRow.swift in Sources */,
+				9DC18C9A2C3E54CE00990132 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +738,14 @@
 				minimumVersion = 0.2.9;
 			};
 		};
+		9DC18C9D2C3E6D3B00990132 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -737,6 +753,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DBACE112C24C08100B5CEE6 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
+		};
+		9DC18C9E2C3E6D3B00990132 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DC18C9D2C3E6D3B00990132 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
