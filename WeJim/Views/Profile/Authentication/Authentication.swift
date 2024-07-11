@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ProfileSignIn: View {
+struct Authentication: View {
+    @State var username = "" //Will have to be @Published later
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [.indigo,.black], startPoint: .top, endPoint: .bottom)
@@ -15,16 +17,8 @@ struct ProfileSignIn: View {
             VStack(spacing: 50) {
                 Image("PreprSignIn")
                 Spacer()
-                Text("Username")
-                Text("Password")
-                Button("Sign In") {
-                    
-                }
-                .buttonStyle(.borderedProminent)
-                Button("Sign up") {
-                    
-                }
-                .foregroundStyle(.indigo)
+                SignIn()
+                SignUp()
             }
             .foregroundStyle(.white)
             .padding(.vertical)
@@ -33,5 +27,5 @@ struct ProfileSignIn: View {
 }
 
 #Preview {
-    ProfileSignIn()
+    Authentication()
 }
