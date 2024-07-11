@@ -13,14 +13,7 @@ struct ProfileHost: View {
         VStack(spacing: 20) {
             ProfileSummary(profile: draftProfile)
             Spacer()
-            Button("Sign Out") {
-                //Complete Sign Out Here
-                
-                
-                
-                
-            }
-            .buttonStyle(.bordered)
+            SignOut()
         }
         .padding()
         .preferredColorScheme(.dark)

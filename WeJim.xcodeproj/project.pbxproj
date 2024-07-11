@@ -243,8 +243,8 @@
 		9DC18CB12C3F514600990132 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				9DC18CB42C3F5BEF00990132 /* SignIn.swift */,
 				9D9B693D2C3B85B300162AFD /* Authentication.swift */,
+				9DC18CB42C3F5BEF00990132 /* SignIn.swift */,
 				9DC18CB22C3F516700990132 /* SignOut.swift */,
 				9DC18CB62C3F5C5B00990132 /* SignUp.swift */,
 			);

@@ -9,7 +9,14 @@ import SwiftUI
 
 struct SignOut: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Sign Out") {
+            //Complete Sign Out Here
+            
+            
+            
+            
+        }
+        .buttonStyle(.bordered)
     }
 }
 

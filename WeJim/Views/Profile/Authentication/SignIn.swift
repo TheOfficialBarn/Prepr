@@ -19,10 +19,10 @@ struct SignIn: View {
         VStack {
             TextField("Username...", text: $uAndP.email)
                 .padding() //Padding goes before so that way the background is bigger
-                .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.5)))
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.3)))
             SecureField("Password...", text: $uAndP.password)
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.5)))
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.3)))
             Button("Sign In") {
                 
             }
