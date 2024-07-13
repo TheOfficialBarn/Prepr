@@ -22,10 +22,10 @@ struct ChosenItemView: View {
     
     var body: some View {
         VStack {
-            Image("LightModeWood")
+            item.image
                 .resizable()
                 .ignoresSafeArea()
-                .scaledToFit()
+                .blur(radius:30)
             ChosenItemCircleImage(item: item)
                 .offset(y: -130)
                 .padding(.bottom, -130)
@@ -54,16 +54,10 @@ struct ChosenItemView: View {
                     }
                     .buttonStyle(.bordered)
                 }
-                RoundedRectangle(cornerRadius: CGFloat(20))
-                    .fill(.tertiary)
-                    .overlay {
-                        ScrollView() {
-                            Text(completionResult)
-                        }
-                        .padding()
-                        .transition(.blurReplace)
-                        .id(id)
-                    }
+                GenRecipeResult(completionResult: completionResult)
+                    .transition(.blurReplace)
+                    .id(id)
+                    
             }
             .padding()
             

@@ -1,14 +1,13 @@
 //
-//  RecipeTile.swift
-//  WeJim
+//  GenRecipeResult.swift
+//  Prepr
 //
-//  Created by Aiden Barnard on 7/7/24.
+//  Created by Aiden Barnard on 7/13/24.
 //
-//I want a gradient based on the days of the week the recipe starts and ends
 
 import SwiftUI
 
-struct RecipeTile: View {
+struct GenRecipeResult: View {
     private let gradientArray = [
         [Color(red: 40/255, green: 40/255, blue: 200/255), Color(red: 255/255, green: 80/255, blue: 255/255)], //Indigo/Fuscia
         [Color(red: 0.992, green: 0.788, blue: 0.365), Color(red: 0.941, green: 0.431, blue: 0.576)], //Sunset
@@ -23,7 +22,14 @@ struct RecipeTile: View {
         [Color(red: 0.867, green: 0.498, blue: 0.314), Color(red: 0.314, green: 0.867, blue: 0.498)], // Autumn
         [Color(red: 0.345, green: 0.678, blue: 0.839), Color(red: 0.678, green: 0.345, blue: 0.839)], // Twilight
     ]
-    var recipe: Recipe
+    
+    var completionResult : String
+    private let ingredientsDict: [String: String]
+    
+    init(completionResult: String) {
+        self.completionResult = completionResult
+        self.ingredientsDict = parseIngredients(completionResult)
+    }
     
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
@@ -32,21 +38,23 @@ struct RecipeTile: View {
                 colors: gradientArray.randomElement() ?? [.blue, .green],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing))
-            .frame(width: .infinity, height: 160)
+            .frame(width: .infinity, height: 180)
             .overlay {
                 VStack(alignment: .leading, spacing: 10) {
-                    
                     HStack(spacing: 30) {
-                        Text("\(recipe.startQueue) – \(recipe.endQueue)") //Eventually want to look like this: Tue 11 – Fri 27
+                        Text("Generated Recipe")
+                            .font(.headline)
                         Spacer()
-                        Image(systemName: "fork.knife")
+                        Image(systemName: "atom")
                     }
-                    Text(recipe.item.name)
-                        .font(.system(size: 36, weight: .bold, design: .rounded))
-                    //Might make an ingredient array to display ingredients through iteration
-                    Text(recipe.ingredients.joined(separator: ", "))
-                        .font(.footnote)
-                    
+                    Divider()
+                        .frame(height: 3)
+                        .background(.black)
+                        .cornerRadius(5) //THIS WILL BE DEPRECATED SOON. FIND A NEW WAY TO DO THIS.
+                    Text("Ingredients:")
+                        .font(.title2)
+                    Text(ingredientsDict.keys.joined(separator: ", "))
+                        .font(.caption)
                 }
                 .padding(.horizontal)
             }
@@ -54,5 +62,14 @@ struct RecipeTile: View {
 }
 
 #Preview {
-    RecipeTile(recipe: savedRecipes[0])
+    let ingredientsString = """
+    Ingredients:
+    - 3/4 tsp Salt
+    - 3/4 tsp Honey
+    - 2 gallons Water
+    - 5 tbsp Paprika
+    - 3 pinches Garlic Powder
+    """
+    
+    GenRecipeResult(completionResult: ingredientsString)
 }

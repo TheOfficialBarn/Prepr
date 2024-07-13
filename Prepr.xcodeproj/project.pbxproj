@@ -38,6 +38,8 @@
 		9DC83E592C27CDB1003C403A /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E582C27CDB1003C403A /* GroceryListView.swift */; };
 		9DC83E5F2C28E20B003C403A /* ChosenItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */; };
 		9DC83E612C28E64C003C403A /* ChosenItemCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC83E602C28E64C003C403A /* ChosenItemCircleImage.swift */; };
+		9DF9602A2C43272E00BDA59A /* GenRecipeToDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF960292C43272E00BDA59A /* GenRecipeToDict.swift */; };
+		9DF9602E2C432F8B00BDA59A /* GenRecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9602D2C432F8B00BDA59A /* GenRecipeResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		9DC83E582C27CDB1003C403A /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenItemView.swift; sourceTree = "<group>"; };
 		9DC83E602C28E64C003C403A /* ChosenItemCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenItemCircleImage.swift; sourceTree = "<group>"; };
+		9DF960292C43272E00BDA59A /* GenRecipeToDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenRecipeToDict.swift; sourceTree = "<group>"; };
+		9DF9602D2C432F8B00BDA59A /* GenRecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenRecipeResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */,
 				9DC83E532C27AC75003C403A /* Item.swift */,
 				9DC18C992C3E54CE00990132 /* Recipe.swift */,
+				9DF960292C43272E00BDA59A /* GenRecipeToDict.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			children = (
 				9DC83E602C28E64C003C403A /* ChosenItemCircleImage.swift */,
 				9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */,
+				9DF9602D2C432F8B00BDA59A /* GenRecipeResult.swift */,
 			);
 			path = ChosenItem;
 			sourceTree = "<group>";
@@ -408,9 +414,11 @@
 				9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */,
 				9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */,
 				9D9B69342C3A504300162AFD /* Profile.swift in Sources */,
+				9DF9602A2C43272E00BDA59A /* GenRecipeToDict.swift in Sources */,
 				9DC83E612C28E64C003C403A /* ChosenItemCircleImage.swift in Sources */,
 				9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */,
 				9DC83E592C27CDB1003C403A /* GroceryListView.swift in Sources */,
+				9DF9602E2C432F8B00BDA59A /* GenRecipeResult.swift in Sources */,
 				9D9B693E2C3B85B300162AFD /* Authentication.swift in Sources */,
 				9DC18CB72C3F5C5B00990132 /* SignUp.swift in Sources */,
 				9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */,
