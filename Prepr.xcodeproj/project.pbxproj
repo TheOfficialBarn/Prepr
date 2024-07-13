@@ -68,14 +68,14 @@
 		9D9B693D2C3B85B300162AFD /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		9D9B69402C3B8EF600162AFD /* RecipeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTile.swift; sourceTree = "<group>"; };
 		9D9B69432C3B9CB200162AFD /* RecipeTileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileColumn.swift; sourceTree = "<group>"; };
-		9DBACDE22C24BFF800B5CEE6 /* WeJim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeJim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBACDE22C24BFF800B5CEE6 /* Prepr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prepr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACDE52C24BFF800B5CEE6 /* WeJimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimApp.swift; sourceTree = "<group>"; };
 		9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBACDEC2C24BFF900B5CEE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9DBACDF22C24BFF900B5CEE6 /* WeJimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeJimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBACDF22C24BFF900B5CEE6 /* PreprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACDF62C24BFF900B5CEE6 /* WeJimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimTests.swift; sourceTree = "<group>"; };
-		9DBACDFC2C24BFF900B5CEE6 /* WeJimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeJimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBACDFC2C24BFF900B5CEE6 /* PreprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBACE002C24BFF900B5CEE6 /* WeJimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimUITests.swift; sourceTree = "<group>"; };
 		9DBACE022C24BFF900B5CEE6 /* WeJimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9DBACE0F2C24C03200B5CEE6 /* OpenAiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiModel.swift; sourceTree = "<group>"; };
@@ -196,9 +196,9 @@
 		9DBACDE32C24BFF800B5CEE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DBACDE22C24BFF800B5CEE6 /* WeJim.app */,
-				9DBACDF22C24BFF900B5CEE6 /* WeJimTests.xctest */,
-				9DBACDFC2C24BFF900B5CEE6 /* WeJimUITests.xctest */,
+				9DBACDE22C24BFF800B5CEE6 /* Prepr.app */,
+				9DBACDF22C24BFF900B5CEE6 /* PreprTests.xctest */,
+				9DBACDFC2C24BFF900B5CEE6 /* PreprUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DBACDE12C24BFF800B5CEE6 /* WeJim */ = {
+		9DBACDE12C24BFF800B5CEE6 /* Prepr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DBACE062C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJim" */;
+			buildConfigurationList = 9DBACE062C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "Prepr" */;
 			buildPhases = (
 				9DBACDDE2C24BFF800B5CEE6 /* Sources */,
 				9DBACDDF2C24BFF800B5CEE6 /* Frameworks */,
@@ -275,19 +275,19 @@
 			);
 			dependencies = (
 			);
-			name = WeJim;
+			name = Prepr;
 			packageProductDependencies = (
 				9DBACE122C24C08100B5CEE6 /* OpenAI */,
 				9DC18CA42C3F3B0800990132 /* FirebaseAnalytics */,
 				9DC18CA62C3F3B5100990132 /* FirebaseAnalyticsSwift */,
 			);
 			productName = WeJim;
-			productReference = 9DBACDE22C24BFF800B5CEE6 /* WeJim.app */;
+			productReference = 9DBACDE22C24BFF800B5CEE6 /* Prepr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DBACDF12C24BFF900B5CEE6 /* WeJimTests */ = {
+		9DBACDF12C24BFF900B5CEE6 /* PreprTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DBACE092C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJimTests" */;
+			buildConfigurationList = 9DBACE092C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "PreprTests" */;
 			buildPhases = (
 				9DBACDEE2C24BFF900B5CEE6 /* Sources */,
 				9DBACDEF2C24BFF900B5CEE6 /* Frameworks */,
@@ -298,14 +298,14 @@
 			dependencies = (
 				9DBACDF42C24BFF900B5CEE6 /* PBXTargetDependency */,
 			);
-			name = WeJimTests;
+			name = PreprTests;
 			productName = WeJimTests;
-			productReference = 9DBACDF22C24BFF900B5CEE6 /* WeJimTests.xctest */;
+			productReference = 9DBACDF22C24BFF900B5CEE6 /* PreprTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9DBACDFB2C24BFF900B5CEE6 /* WeJimUITests */ = {
+		9DBACDFB2C24BFF900B5CEE6 /* PreprUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DBACE0C2C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJimUITests" */;
+			buildConfigurationList = 9DBACE0C2C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "PreprUITests" */;
 			buildPhases = (
 				9DBACDF82C24BFF900B5CEE6 /* Sources */,
 				9DBACDF92C24BFF900B5CEE6 /* Frameworks */,
@@ -316,9 +316,9 @@
 			dependencies = (
 				9DBACDFE2C24BFF900B5CEE6 /* PBXTargetDependency */,
 			);
-			name = WeJimUITests;
+			name = PreprUITests;
 			productName = WeJimUITests;
-			productReference = 9DBACDFC2C24BFF900B5CEE6 /* WeJimUITests.xctest */;
+			productReference = 9DBACDFC2C24BFF900B5CEE6 /* PreprUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -344,7 +344,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9DBACDDD2C24BFF800B5CEE6 /* Build configuration list for PBXProject "WeJim" */;
+			buildConfigurationList = 9DBACDDD2C24BFF800B5CEE6 /* Build configuration list for PBXProject "Prepr" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -361,9 +361,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DBACDE12C24BFF800B5CEE6 /* WeJim */,
-				9DBACDF12C24BFF900B5CEE6 /* WeJimTests */,
-				9DBACDFB2C24BFF900B5CEE6 /* WeJimUITests */,
+				9DBACDE12C24BFF800B5CEE6 /* Prepr */,
+				9DBACDF12C24BFF900B5CEE6 /* PreprTests */,
+				9DBACDFB2C24BFF900B5CEE6 /* PreprUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -447,12 +447,12 @@
 /* Begin PBXTargetDependency section */
 		9DBACDF42C24BFF900B5CEE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DBACDE12C24BFF800B5CEE6 /* WeJim */;
+			target = 9DBACDE12C24BFF800B5CEE6 /* Prepr */;
 			targetProxy = 9DBACDF32C24BFF900B5CEE6 /* PBXContainerItemProxy */;
 		};
 		9DBACDFE2C24BFF900B5CEE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9DBACDE12C24BFF800B5CEE6 /* WeJim */;
+			target = 9DBACDE12C24BFF800B5CEE6 /* Prepr */;
 			targetProxy = 9DBACDFD2C24BFF900B5CEE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -588,6 +588,7 @@
 				DEVELOPMENT_TEAM = 72NQF7NS4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Prepr;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -619,6 +620,7 @@
 				DEVELOPMENT_TEAM = 72NQF7NS4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Prepr;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -654,7 +656,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeJim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeJim";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prepr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prepr";
 			};
 			name = Debug;
 		};
@@ -673,7 +675,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeJim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeJim";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prepr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prepr";
 			};
 			name = Release;
 		};
@@ -714,7 +716,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DBACDDD2C24BFF800B5CEE6 /* Build configuration list for PBXProject "WeJim" */ = {
+		9DBACDDD2C24BFF800B5CEE6 /* Build configuration list for PBXProject "Prepr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DBACE042C24BFF900B5CEE6 /* Debug */,
@@ -723,7 +725,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DBACE062C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJim" */ = {
+		9DBACE062C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "Prepr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DBACE072C24BFF900B5CEE6 /* Debug */,
@@ -732,7 +734,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DBACE092C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJimTests" */ = {
+		9DBACE092C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "PreprTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DBACE0A2C24BFF900B5CEE6 /* Debug */,
@@ -741,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DBACE0C2C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "WeJimUITests" */ = {
+		9DBACE0C2C24BFF900B5CEE6 /* Build configuration list for PBXNativeTarget "PreprUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DBACE0D2C24BFF900B5CEE6 /* Debug */,

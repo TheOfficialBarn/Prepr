@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Authentication: View {
-    @State var username = "" //Will have to be @Published later
     
     var body: some View {
         ZStack {
