@@ -16,7 +16,6 @@ struct ProfileHost: View {
             SignOut()
         }
         .padding()
-        .preferredColorScheme(.dark)
     }
 }
 
