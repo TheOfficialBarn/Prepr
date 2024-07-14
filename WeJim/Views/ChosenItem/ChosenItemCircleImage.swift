@@ -21,7 +21,7 @@ struct ChosenItemCircleImage: View {
                 Circle().stroke(.gray, lineWidth: 4)
             }
             .shadow(radius: 10)
-            .padding(.horizontal, 80)
+            .padding(.horizontal, 50)
     }
 }
 

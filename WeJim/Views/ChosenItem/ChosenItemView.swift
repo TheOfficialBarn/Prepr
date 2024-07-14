@@ -21,53 +21,47 @@ struct ChosenItemView: View {
     @State private var id = 1 //Another local view state so private
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             item.image
                 .resizable()
                 .ignoresSafeArea()
-                .blur(radius:30)
-            ChosenItemCircleImage(item: item)
-                .offset(y: -130)
-                .padding(.bottom, -130)
-            
-
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("\(item.name) Recipe")
-                        .font(.title)
-                    Spacer()
-                    Button("Generate") {
-                        Task {
-                            isLoading = true
-                            do {
-                                let result = try await fetchOpenAICompletion(item: item)
-                                
-                                //withAnimation() <-- optional () and inside it can be .easeInOut(duration: 1)) {...
-                                withAnimation {
-                                    completionResult = result.choices.first?.text ?? "No response"
-                                    id += 1
-                                }
-                            } catch {
-                                print("Something went wrong 😭 \(error)")
-                            }
-                        }
-                    }
-                    .buttonStyle(.bordered)
+                .blur(radius:50)
+                .overlay {
+                    ChosenItemCircleImage(item: item)
+                        .padding()
                 }
-                GenRecipeResult(completionResult: completionResult)
-                    .transition(.blurReplace)
-                    .id(id)
-                    
-            }
-            .padding()
             
-            Spacer() //Forces image to go to the top.
-                
-                
+            Button("Generate") {
+                Task {
+                    isLoading = true
+                    do {
+                        let result = try await fetchOpenAICompletion(item: item)
+                        
+                        //withAnimation() <-- optional () and inside it can be .easeInOut(duration: 1)) {...
+                        withAnimation {
+                            completionResult = result.choices.first?.text ?? "No response"
+                            id += 1
+                        }
+                    } catch {
+                        print("Something went wrong 😭 \(error)")
+                    }
+                }
+            }
+            .buttonStyle(.bordered)
+            .offset(y: -10)
+            
+            GenRecipeResult(completionResult: completionResult)
+                .transition(.blurReplace)
+                .id(id)
+                .padding(.horizontal)
+                .foregroundStyle(.black)
         }
+        .navigationTitle("\(item.name) Recipe")
     }
 }
 
 #Preview {
-    ChosenItemView(item: foods[0])
+    NavigationStack {
+        ChosenItemView(item: foods[0])
+    }
 }

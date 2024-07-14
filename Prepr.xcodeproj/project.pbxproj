@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0B21072C43502C000F3DA8 /* GradientArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B21062C43502C000F3DA8 /* GradientArrays.swift */; };
 		9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364C2C276A5D00FCED4A /* SearchView.swift */; };
 		9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364E2C276B8C00FCED4A /* HomeView.swift */; };
 		9D8E36522C276ECD00FCED4A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E36512C276ECD00FCED4A /* CategoryRow.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0B21062C43502C000F3DA8 /* GradientArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientArrays.swift; sourceTree = "<group>"; };
 		9D8E364C2C276A5D00FCED4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9D8E364E2C276B8C00FCED4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9D8E36512C276ECD00FCED4A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -127,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				9DBACDE72C24BFF800B5CEE6 /* ContentView.swift */,
-				9D9B693F2C3B8ECC00162AFD /* Recipes */,
 				9D8E36502C276E8200FCED4A /* Tabs */,
+				9D9B693F2C3B8ECC00162AFD /* Recipes */,
 				9DC83E552C27B82F003C403A /* Category */,
 				9D9B693C2C3B6E1F00162AFD /* ChosenItem */,
 				9D9B693B2C3B6D9800162AFD /* Profile */,
@@ -145,6 +147,7 @@
 				9DC83E532C27AC75003C403A /* Item.swift */,
 				9DC18C992C3E54CE00990132 /* Recipe.swift */,
 				9DF960292C43272E00BDA59A /* GenRecipeToDict.swift */,
+				9D0B21062C43502C000F3DA8 /* GradientArrays.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,9 +217,9 @@
 			children = (
 				9DBACDE52C24BFF800B5CEE6 /* PreprApp.swift */,
 				9D8E364A2C27694400FCED4A /* Views */,
-				9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */,
 				9D8E364B2C27696900FCED4A /* Model */,
 				9DBACDEB2C24BFF900B5CEE6 /* Preview Content */,
+				9DBACDE92C24BFF900B5CEE6 /* Assets.xcassets */,
 			);
 			path = WeJim;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				9DC83E572C27CD9C003C403A /* CalendarView.swift in Sources */,
 				9DC83E542C27AC75003C403A /* Item.swift in Sources */,
 				9DBACDE62C24BFF800B5CEE6 /* PreprApp.swift in Sources */,
+				9D0B21072C43502C000F3DA8 /* GradientArrays.swift in Sources */,
 				9D8E36522C276ECD00FCED4A /* CategoryRow.swift in Sources */,
 				9DC18C9A2C3E54CE00990132 /* Recipe.swift in Sources */,
 			);
