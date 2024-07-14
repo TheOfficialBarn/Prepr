@@ -27,35 +27,39 @@ struct ChosenItemView: View {
                 .ignoresSafeArea()
                 .blur(radius:50)
                 .overlay {
-                    ChosenItemCircleImage(item: item)
-                        .padding()
-                }
-            
-            Button("Generate") {
-                Task {
-                    isLoading = true
-                    do {
-                        let result = try await fetchOpenAICompletion(item: item)
-                        
-                        //withAnimation() <-- optional () and inside it can be .easeInOut(duration: 1)) {...
-                        withAnimation {
-                            completionResult = result.choices.first?.text ?? "No response"
-                            id += 1
+                    VStack(spacing: 20) {
+                        ChosenItemCircleImage(item: item)
+                            .padding()
+                            .padding(.bottom, 50)
+                        GenRecipeResult(completionResult: completionResult)
+                            .transition(.blurReplace)
+                            .id(id)
+                            .padding(.horizontal)
+                            
+                            .foregroundStyle(.black)
+                        Button("Generate") {
+                            Task {
+                                isLoading = true
+                                do {
+                                    let result = try await fetchOpenAICompletion(item: item)
+                                    
+                                    //withAnimation() <-- optional () and inside it can be .easeInOut(duration: 1)) {...
+                                    withAnimation {
+                                        completionResult = result.choices.first?.text ?? "No response"
+                                        id += 1
+                                    }
+                                } catch {
+                                    print("Something went wrong 😭 \(error)")
+                                }
+                            }
                         }
-                    } catch {
-                        print("Something went wrong 😭 \(error)")
+                        .buttonStyle(.bordered)
+                        .tint(.black)
+                        .foregroundStyle(.primary)
                     }
                 }
-            }
-            .buttonStyle(.bordered)
-            .offset(y: -10)
-            
-            GenRecipeResult(completionResult: completionResult)
-                .transition(.blurReplace)
-                .id(id)
-                .padding(.horizontal)
-                .foregroundStyle(.black)
         }
+        .padding(.bottom)
         .navigationTitle("\(item.name) Recipe")
     }
 }
