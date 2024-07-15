@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9D0B21072C43502C000F3DA8 /* GradientArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B21062C43502C000F3DA8 /* GradientArrays.swift */; };
+		9D0B21092C445195000F3DA8 /* ExpandedGenRecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B21082C445195000F3DA8 /* ExpandedGenRecipeResult.swift */; };
+		9D0B210B2C449BE3000F3DA8 /* IngredientItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B210A2C449BE3000F3DA8 /* IngredientItem.swift */; };
+		9D0B210D2C449FA1000F3DA8 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B210C2C449FA1000F3DA8 /* IngredientRow.swift */; };
 		9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364C2C276A5D00FCED4A /* SearchView.swift */; };
 		9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E364E2C276B8C00FCED4A /* HomeView.swift */; };
 		9D8E36522C276ECD00FCED4A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E36512C276ECD00FCED4A /* CategoryRow.swift */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		9D0B21062C43502C000F3DA8 /* GradientArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientArrays.swift; sourceTree = "<group>"; };
+		9D0B21082C445195000F3DA8 /* ExpandedGenRecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedGenRecipeResult.swift; sourceTree = "<group>"; };
+		9D0B210A2C449BE3000F3DA8 /* IngredientItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientItem.swift; sourceTree = "<group>"; };
+		9D0B210C2C449FA1000F3DA8 /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		9D8E364C2C276A5D00FCED4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9D8E364E2C276B8C00FCED4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9D8E36512C276ECD00FCED4A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				9DC83E602C28E64C003C403A /* ChosenItemCircleImage.swift */,
 				9DC83E5E2C28E20B003C403A /* ChosenItemView.swift */,
 				9DF9602D2C432F8B00BDA59A /* GenRecipeResult.swift */,
+				9D0B21082C445195000F3DA8 /* ExpandedGenRecipeResult.swift */,
+				9D0B210A2C449BE3000F3DA8 /* IngredientItem.swift */,
+				9D0B210C2C449FA1000F3DA8 /* IngredientRow.swift */,
 			);
 			path = ChosenItem;
 			sourceTree = "<group>";
@@ -413,12 +422,14 @@
 				9D9B69412C3B8EF600162AFD /* RecipeTile.swift in Sources */,
 				9DC18CB52C3F5BEF00990132 /* SignIn.swift in Sources */,
 				9DC18CB32C3F516700990132 /* SignOut.swift in Sources */,
+				9D0B210D2C449FA1000F3DA8 /* IngredientRow.swift in Sources */,
 				9DBACE102C24C05000B5CEE6 /* OpenAiModel.swift in Sources */,
 				9D9B69382C3A535F00162AFD /* ProfileSummary.swift in Sources */,
 				9D8E364D2C276A5D00FCED4A /* SearchView.swift in Sources */,
 				9D9B69342C3A504300162AFD /* Profile.swift in Sources */,
 				9DF9602A2C43272E00BDA59A /* GenRecipeToDict.swift in Sources */,
 				9DC83E612C28E64C003C403A /* ChosenItemCircleImage.swift in Sources */,
+				9D0B210B2C449BE3000F3DA8 /* IngredientItem.swift in Sources */,
 				9DC83E522C27AB11003C403A /* CategoryItem.swift in Sources */,
 				9DC83E592C27CDB1003C403A /* GroceryListView.swift in Sources */,
 				9DF9602E2C432F8B00BDA59A /* GenRecipeResult.swift in Sources */,
@@ -426,6 +437,7 @@
 				9DC18CB72C3F5C5B00990132 /* SignUp.swift in Sources */,
 				9D8E364F2C276B8C00FCED4A /* HomeView.swift in Sources */,
 				9DC83E5F2C28E20B003C403A /* ChosenItemView.swift in Sources */,
+				9D0B21092C445195000F3DA8 /* ExpandedGenRecipeResult.swift in Sources */,
 				9D9B693A2C3B4EFF00162AFD /* Settings.swift in Sources */,
 				9D9B69362C3A52C100162AFD /* ProfileHost.swift in Sources */,
 				9DC83E572C27CD9C003C403A /* CalendarView.swift in Sources */,

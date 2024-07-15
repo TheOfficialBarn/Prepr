@@ -24,7 +24,7 @@ struct GenRecipeResult: View {
                 colors: gradientArray.randomElement() ?? [.blue, .green],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing))
-            .frame(width: .infinity, height: 180)
+            .frame(height: 180)
             .overlay {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(spacing: 30) {
@@ -42,7 +42,7 @@ struct GenRecipeResult: View {
                     Text(ingredientsDict.keys.joined(separator: ", "))
                         .font(.caption)
                 }
-                .padding(.horizontal)
+                .padding()
             }
     }
 }
