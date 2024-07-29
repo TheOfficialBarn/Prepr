@@ -1,0 +1,1 @@
+Hi! Prepr is an app for iOS that generates saveable recipes for the user that can be queued to plan meals for the week. Other featuers include a dynamic grocery list, and a calendar view of queued meal preps.
